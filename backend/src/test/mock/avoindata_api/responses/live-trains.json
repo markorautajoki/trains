@@ -1,0 +1,44 @@
+[
+  {
+    "trainNumber": 1345,
+    "trainType": "IC",
+    "trainCategory": "Long-distance",
+    "timeTableRows": [
+      {
+        "stationShortCode": "TKU",
+        "scheduledTime": "2018-11-13T11:31:20.000Z",
+        "actualTime": "2018-11-13T11:31:20.000Z",
+        "differenceInMinutes": 0,
+        "type": "DEPARTURE"
+      },
+      {
+        "stationShortCode": "HKI",
+        "scheduledTime": "2018-11-13T13:31:20.000Z",
+        "actualTime": "2018-11-13T13:31:20.000Z",
+        "differenceInMinutes": 0,
+        "type": "ARRIVAL"
+      }
+    ]
+  },
+  {
+    "trainNumber": 5431,
+    "trainType": "S",
+    "trainCategory": "Long-distance",
+    "timeTableRows": [
+      {
+        "stationShortCode": "HKI",
+        "scheduledTime": "2018-11-13T14:31:20.000Z",
+        "actualTime": "2018-11-13T14:33:20.000Z",
+        "differenceInMinutes": 2,
+        "type": "DEPARTURE"
+      },
+      {
+        "stationShortCode": "TKU",
+        "scheduledTime": "2018-11-13T16:31:20.000Z",
+        "actualTime": "2018-11-13T16:32:20.000Z",
+        "differenceInMinutes": 0,
+        "type": "ARRIVAL"
+      }
+    ]
+  }
+]

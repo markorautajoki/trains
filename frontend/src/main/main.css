@@ -1,0 +1,10 @@
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stationSelectorContainer {
+  padding: 1em;
+  border-bottom: 1px solid #ffffff;
+  background-color: #000000;
+}

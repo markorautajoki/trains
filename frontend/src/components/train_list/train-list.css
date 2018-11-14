@@ -2,10 +2,6 @@
   flex-grow: 1;
 }
 
-.container:first-child {
-  margin-right: 2em;
-}
-
 .title {
   padding-left: 1em;
 }
@@ -47,5 +43,5 @@
 }
 
 .late {
-  background-color: #a82717;
+  background-color: #822720;
 }

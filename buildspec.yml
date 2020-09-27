@@ -4,6 +4,7 @@ env:
   variables:
     FRONTEND_REPOSITORY_URI: "143637274629.dkr.ecr.us-east-1.amazonaws.com/trains-frontend"
     BACKEND_REPOSITORY_URI: "143637274629.dkr.ecr.us-east-1.amazonaws.com/trains-backend"
+    TAG: "latest"
     REGION: us-east-1
 
 phases:
@@ -15,11 +16,11 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./backend
-      - docker build -t $FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./frontend
+      - docker build -t $BACKEND_REPOSITORY_URI:$TAG ./backend
+      - docker build -t $FRONTEND_REPOSITORY_URI:$TAG ./frontend
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push $BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID
-      - docker push $FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID
+      - docker push $BACKEND_REPOSITORY_URI:$TAG
+      - docker push $FRONTEND_REPOSITORY_URI:$TAG

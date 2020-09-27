@@ -15,11 +15,11 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./backend
-      - docker build -t FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./frontend
+      - docker build -t $BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./backend
+      - docker build -t $FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID ./frontend
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID
-      - docker push FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID
+      - docker push $BACKEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID
+      - docker push $FRONTEND_REPOSITORY_URI:$CODEBUILD_BUILD_ID

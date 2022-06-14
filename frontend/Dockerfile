@@ -1,4 +1,4 @@
-FROM node:carbon-alpine as stage1
+FROM node:18-alpine as stage1
 
 WORKDIR /opt/app
 

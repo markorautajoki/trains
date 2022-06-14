@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 
 import { getTrains, getStations } from "../api";
-import { TrainList, trainListType } from "../components/train_list";
+import { TrainList, trainListType } from "../components/train_list";
 
 import styles from './main.css';
 

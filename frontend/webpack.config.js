@@ -12,7 +12,6 @@ module.exports = {
   },
   devServer: {
     host: '0.0.0.0',
-    contentBase: false,
     port: 8081,
     proxy: [
       {
